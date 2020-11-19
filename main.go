@@ -26,3 +26,9 @@ true || false -> true
 false || true -> true
 false || false -> false
 */
+
+/*
+Expression Value
+!true -> false
+!false -> true
+*/
