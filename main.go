@@ -1,34 +1,13 @@
+/*
+Excercise:
+ Go as a calculator. Write a program that computes 32,132 × 42,452 and
+ prints it to the terminal (use the * operator for multiplication).
+*/
+
 package main
 
 import "fmt"
 
 func main() {
-	fmt.Println(true && true)
-	fmt.Println(true && false)
-	fmt.Println(true || true)
-	fmt.Println(true || false)
-
-	fmt.Println(!true)
+	fmt.Println("32,132 × 42,452 = ", 32132*42452)
 }
-
-/*
-Expression Value
-true && true -> true
-true && false -> false
-false && true -> false
-false && false -> false
-*/
-
-/*
-Expression Value
-true || true -> true
-true || false -> true
-false || true -> true
-false || false -> false
-*/
-
-/*
-Expression Value
-!true -> false
-!false -> true
-*/
