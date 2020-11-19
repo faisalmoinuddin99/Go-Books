@@ -10,3 +10,11 @@ func main() {
 
 	fmt.Println(!true)
 }
+
+/*
+Expression Value
+true && true -> true
+true && false -> false
+false && true -> false
+false && false -> false
+*/
