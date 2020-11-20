@@ -3,14 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	// var x string = " Hello world !"
-	// fmt.Println(x)
-
-	// var y string = "Hello faisal"
-	// fmt.Println(y)
-	// Also
-
 	var x string
-	x = "Hello world !"
+	x = "first value"
+	fmt.Println(x)
+	x = "second value"
 	fmt.Println(x)
 }
