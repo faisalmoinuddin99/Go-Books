@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var x = " Hello world !"
+	var x string = " Hello world !"
 	fmt.Println(x)
 
-	var y = "Hello faisal"
+	var y string = "Hello faisal"
 	fmt.Println(y)
 }
