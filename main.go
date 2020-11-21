@@ -1,6 +1,6 @@
 /*
-Here’s an example program that takes in a number entered by the user and
-doubles it:
+write a program that converts from Fahrenheit into Celsius
+(C = (F − 32) * 5/9).
 */
 
 package main
@@ -8,16 +8,24 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Enter the number:")
-	var userInput float64
-	fmt.Scanf("%f", &userInput)
+	/*
+		Todos:
+		1. Take input as in Fahrenheit
+		2. convert it into celsius
+		3. display the output in celsius
+	*/
 
-	userInput *= 2
-	fmt.Println("The double of the entered value is:", userInput)
+	var Fahrenheit float64
+	var Celsius float64
+
+	fmt.Print("Enter the Temprature in Fahrenheit :")
+	fmt.Scanf("%f", &Fahrenheit)
+	Celsius = ((Fahrenheit - 32) * 5 / 9)
+	fmt.Print("The conversion result = ", Celsius, "°C")
 }
 
 /*
-Output : go run main.go
-Enter the number:4
-The double of the entered value is: 8
+Output :go run main.go
+Enter the Temprature in Fahrenheit :100
+The conversion result = 37.77777777777778°C
 */
