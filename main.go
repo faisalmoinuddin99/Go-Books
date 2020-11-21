@@ -2,19 +2,15 @@ package main
 
 import "fmt"
 
+var x string = "Hello world" // golbally scoped
+
 func main() {
-	// How to Name a Variable
+	// Scope
 
-	x := "Max"
-	fmt.Println("My Dog name is", x)
-	/* In this case, x is not a very good name for a variable.
-	A better name would be: */
+	fmt.Println(x)
+	p()
+}
 
-	name := "Faisal"
-	fmt.Println("My name is", name)
-
-	// or Even
-
-	myDogName := "Max" // camelCasing
-	fmt.Println("My dogs name is", myDogName)
+func p() {
+	fmt.Println(x)
 }
