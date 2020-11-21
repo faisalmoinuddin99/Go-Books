@@ -2,8 +2,14 @@ package main
 
 import "fmt"
 
-const pi float32 = 3.14 // golbally scoped
-
 func main() {
-	fmt.Println("The value of Pi is", pi)
+	// Defning Multiple Variables
+
+	var (
+		x = 10
+		y = 20
+		z = 15
+	)
+
+	fmt.Println(x, y, z)
 }
