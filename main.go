@@ -1,6 +1,8 @@
 /*
-write a program that converts from Fahrenheit into Celsius
-(C = (F − 32) * 5/9).
+Write another program that converts from feet into meters
+(1 ft = 0.3048 m).
+OR
+(divide value of foot with 3.281)
 */
 
 package main
@@ -10,22 +12,22 @@ import "fmt"
 func main() {
 	/*
 		Todos:
-		1. Take input as in Fahrenheit
-		2. convert it into celsius
-		3. display the output in celsius
+		1. Take input as in feet
+		2. convert it into meters
+		3. display the output in meters
 	*/
 
-	var Fahrenheit float64
-	var Celsius float64
+	var feet float64
+	var meters float64
 
-	fmt.Print("Enter the Temprature in Fahrenheit :")
-	fmt.Scanf("%f", &Fahrenheit)
-	Celsius = ((Fahrenheit - 32) * 5 / 9)
-	fmt.Print("The conversion result = ", Celsius, "°C")
+	fmt.Print("Enter the value in Feet :")
+	fmt.Scanf("%f", &feet)
+	meters = (feet / 3.281)
+	fmt.Print("The conversion result = ", meters, "m")
 }
 
 /*
 Output :go run main.go
-Enter the Temprature in Fahrenheit :100
-The conversion result = 37.77777777777778°C
+Enter the value in Feet :1
+The conversion result = 0.30478512648582745m
 */
