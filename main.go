@@ -2,15 +2,8 @@ package main
 
 import "fmt"
 
-var x string = "Hello world" // golbally scoped
+const pi float32 = 3.14 // golbally scoped
 
 func main() {
-	// Scope
-
-	fmt.Println(x)
-	p()
-}
-
-func p() {
-	fmt.Println(x)
+	fmt.Println("The value of Pi is", pi)
 }
