@@ -3,14 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Equality Operator
+	//Short Hand Statement
 
-	var x string = "Hello"
-	var y string = "world"
+	x := "Hello world"
+	fmt.Println(x)
 
-	fmt.Println(x == y)
-
-	var z string = "world"
-
-	fmt.Println(y == z)
+	y := 9.4
+	fmt.Println(y + 5)
 }
