@@ -3,11 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	//Short Hand Statement
+	// How to Name a Variable
 
-	x := "Hello world"
-	fmt.Println(x)
+	x := "Max"
+	fmt.Println("My Dog name is", x)
+	/* In this case, x is not a very good name for a variable.
+	A better name would be: */
 
-	y := 9.4
-	fmt.Println(y + 5)
+	name := "Faisal"
+	fmt.Println("My name is", name)
+
+	// or Even
+
+	myDogName := "Max" // camelCasing
+	fmt.Println("My dogs name is", myDogName)
 }
