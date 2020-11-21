@@ -1,15 +1,23 @@
+/*
+Here’s an example program that takes in a number entered by the user and
+doubles it:
+*/
+
 package main
 
 import "fmt"
 
 func main() {
-	// Defning Multiple Variables
+	fmt.Print("Enter the number:")
+	var userInput float64
+	fmt.Scanf("%f", &userInput)
 
-	var (
-		x = 10
-		y = 20
-		z = 15
-	)
-
-	fmt.Println(x, y, z)
+	userInput *= 2
+	fmt.Println("The double of the entered value is:", userInput)
 }
+
+/*
+Output : go run main.go
+Enter the number:4
+The double of the entered value is: 8
+*/
