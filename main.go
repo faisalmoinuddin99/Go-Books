@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// WAP to count a number from 1 to 10
+	/* WAP to count a number from 1 to 10 */
 
 	var i int32
 	i = 1
