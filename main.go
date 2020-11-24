@@ -3,13 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	/* WAP to count a number from 1 to 10 */
+	/* WAP to reverse a number from 10 to 1 */
 
-	var i int32
-	i = 1
-
-	for i <= 10 {
-		fmt.Println(i)
-		i++
+	var i int16
+	i = 10
+	for i >= 1 {
+		fmt.Print(i, " ")
+		i--
 	}
 }
