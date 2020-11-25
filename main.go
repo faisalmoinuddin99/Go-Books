@@ -3,19 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	var array_name [5]int
-	array_name[4] = 100
+	/*
+		WAP to find the average of total marks
+	*/
 
-	fmt.Print(array_name)
+	var marks [5]float32
+
+	marks[0] = 98
+	marks[1] = 89
+	marks[2] = 85
+	marks[3] = 70
+	marks[4] = 81
+	var total float32
+	var i = 0
+	for ; i < 5; i++ {
+		total += marks[i]
+	}
+	fmt.Print("Total marks =", total)
+	fmt.Println("Average marks =", total/5)
 }
-
-/*
-You should see this:
-[0 0 0 0 100]
-
-x[4] = 100 should be read “set the fifth element of the array x to 100.”
-It might seem strange that x[4] represents the fifth element instead
-of the fourth, but like strings, arrays are indexed starting from 0.
-Arrays are accessed in a similar way. We could change fmt.Println(x)
-to fmt.Println(x[4]) and we would get 100.
-*/
