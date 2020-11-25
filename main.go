@@ -20,5 +20,5 @@ func main() {
 		total += marks[i]
 	}
 	fmt.Print("Total marks =", total)
-	fmt.Println("Average marks =", total/5)
+	fmt.Println("Average marks =", total/float32(len(marks))) // TypeCasting
 }
