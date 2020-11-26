@@ -11,10 +11,17 @@ func main() {
 	slice2 := append(slice1, 4, 5)
 
 	fmt.Println(slice1, slice2)
+
+	source := []string{"A", "B", "C"}
+	destination := make([]string, 2)
+
+	copy(destination, source)
+	fmt.Println(source, destination)
 }
 
 /*
-After running this program, slice1 has [1,2,3] and slice2 has [1,2,3,4,5].
-append creates a new slice by taking an existing slice (the first argument) and append‐
-ing all the following arguments to it.
+After running this program slice1 has [1,2,3] and slice2 has [1,2].
+The contents of slice1 are copied into slice2, but because slice2 has
+room for only two elements, only the first two elements of slice1 are
+copied.
 */
