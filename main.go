@@ -1,5 +1,5 @@
 /*
-Shorter hand syntax for creating an array
+Slice
 */
 
 package main
@@ -7,15 +7,14 @@ package main
 import "fmt"
 
 func main() {
-	x := [5]float64{
-		98,
-		99,
-		100,
-		121,
-		45,
-	}
+	slice1 := []int{1, 2, 3}
+	slice2 := append(slice1, 4, 5)
 
-	for _, value := range x {
-		fmt.Print(value, " ")
-	}
+	fmt.Println(slice1, slice2)
 }
+
+/*
+After running this program, slice1 has [1,2,3] and slice2 has [1,2,3,4,5].
+append creates a new slice by taking an existing slice (the first argument) and append‐
+ing all the following arguments to it.
+*/
