@@ -7,21 +7,28 @@ package main
 import "fmt"
 
 func main() {
-	slice1 := []int{1, 2, 3}
-	slice2 := append(slice1, 4, 5)
 
-	fmt.Println(slice1, slice2)
+	// make new
+	// new - only allocates - no init memory
+	// make - allocates and init memory - non zerored storage
+	score := make(map[string]int)
+	score["faisal"] = 90
+	fmt.Println(score)
 
-	source := []string{"A", "B", "C"}
-	destination := make([]string, 2)
+	score["hitesh"] = 78
+	score["rahul"] = 60
+	score["nikky"] = 58
+	score["ron"] = 98
 
-	copy(destination, source)
-	fmt.Println(source, destination)
+	for key, value := range score {
+		fmt.Printf("Score of %v is %v \n", key, value)
+	}
+
+	delete(score, "nikky")
+	for key, value := range score {
+		fmt.Printf("Score of %v is %v \n", key, value)
+	}
+
+	getFaisalScore := score["faisal"]
+	fmt.Println(getFaisalScore)
 }
-
-/*
-After running this program slice1 has [1,2,3] and slice2 has [1,2].
-The contents of slice1 are copied into slice2, but because slice2 has
-room for only two elements, only the first two elements of slice1 are
-copied.
-*/
